@@ -156,7 +156,6 @@ def train_and_eval(data_path, out_dir, results_dir, epochs=250, batch_size=256, 
             val_preds_mlp = pred
         mlp_metrics[split_name] = evaluate_predictions(Y[mask], pred, frames[mask])
 
-    # Save checkpoint locally (not committed to git)
     os.makedirs(out_dir, exist_ok=True)
     ckpt_path = os.path.join(out_dir, "c1_mlp.pt")
     torch.save(
@@ -169,7 +168,6 @@ def train_and_eval(data_path, out_dir, results_dir, epochs=250, batch_size=256, 
         ckpt_path,
     )
 
-    # Save lightweight JSON metrics and diagnostic plot to P3/results/ (safe to commit)
     os.makedirs(results_dir, exist_ok=True)
     summary = {
         "best_val_norm_mse": best_val_loss,

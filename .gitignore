@@ -219,5 +219,5 @@ __marimo__/
 # Streamlit
 .streamlit/secrets.toml
 
-# P3 datasets and checkpoints (commit scripts and lightweight results only)
+# P3 local npz and checkpoints
 P3/outputs/

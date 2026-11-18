@@ -121,5 +121,4 @@ if __name__ == "__main__":
         out = checker.check_pipeline_json(args.pipeline_json, args.cases_csv)
         print(json.dumps(out[:5], indent=2))
     else:
-        # Quick smoke test on sample parameters
-        print("Sample C1 prediction (lhs_082, t=300):", checker.predict_c1([0.8475, 0.054375, 1.405], 300))
+        print("lhs_082 t=300:", checker.predict_c1([0.8475, 0.054375, 1.405], 300))
