@@ -1,0 +1,24 @@
+{
+ "case": "fg_25",
+ "frame": 300,
+ "device": "cpu",
+ "dropped_keys": [
+  "ut_grid.bias",
+  "ut_grid.weight"
+ ],
+ "autoencoder_phi_rmse_percent": {
+  "p1": 0.8088299688350385,
+  "training_job": 0.8087968356608635
+ },
+ "rollout_phi_rmse_percent": {
+  "p1": 10.59010014384771,
+  "training_job": 10.558022099398357
+ },
+ "normalization_shape": [
+  1,
+  4,
+  1,
+  1
+ ],
+ "passed": true
+}
