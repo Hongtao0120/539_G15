@@ -8,7 +8,7 @@ do not create a separate split.
 1. `pip install -r P4/requirements.txt` (the NPS repo is cloned automatically into `P4/NPS`).
 2. Data: P1's epoch cache (`<repo>/cache/<campaign>/<case>/epoch_XXX.npz`). If it does not
    exist, build it with `cd P1/data && python make_cache.py --raw-dir <raw folder> --cache-dir ../../cache --jobs 8`
-   (needs h5py), where the raw folder is the ME539 folder with each dataset inside, or pass `--cache-dir` pointing to the shared copy.
+   (needs h5py), where the raw folder is the ME539 folder with each dataset inside, or pass `--cache-dir` to p4.py with the filepath of the shared epoch cache.
 
 ## Run
     python P4/p4.py --epochs 10                       # GPU, full train/val sets
