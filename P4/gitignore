@@ -1,0 +1,7 @@
+# generated data / artifacts - do not commit
+grid_cache/
+outputs/
+NPS/
+__pycache__/
+*.pt
+*.npz
